@@ -145,13 +145,13 @@
                         <span class="project-tag">Project #1/2</span>
                         <h3 class="mt-2">Birthday Paradox</h3>
                         <p>
-                            <strong>Motivation:</strong> Describe what problem or opportunity motivated this project and why it was worth building.
+                            <strong>Motivation:</strong> This project was used to reinforce the S.O.L.I.D. principles of clean coding. A secondary focus of the project was learning to collaborate with a team member and use effective commit messages and descriptive pull requests on Github.
                         </p>
                         <p>
-                            <strong>Functionality:</strong> Outline the key features and what the project does from the user's perspective.
+                            <strong>Functionality:</strong> The program addresses the paradox concerning the probability of two people having the same birthday in a room full of n amount of people. It runs a set number of trials with varying amounts of people in the experiment room.
                         </p>
                         <p>
-                            <strong>Design &amp; Implementation:</strong> Summarize the technical design decisions, languages, frameworks, or tools used to bring the project to life.
+                            <strong>Design &amp; Implementation:</strong> The structure of the experiment relies on trial objects, with each trial creating a random birthday for each person in the room and then returning whether the trial generated a duplicate birthday. Experiment objects manage n number of trials and calculates a ratio of the amount of trials that found a duplicate birthday over the total number of trials the experiment had. A single simulator object contains the main method and manages the experiments, which each have their respective number of participants in each of their trials' rooms.
                         </p>
                     </div>
                 </div>
@@ -172,13 +172,13 @@
                         <span class="project-tag">Project #3</span>
                         <h3 class="mt-2">Elevator Simulator</h3>
                         <p>
-                            <strong>Motivation:</strong> Describe what problem or opportunity motivated this project and why it was worth building.
+                            <strong>Motivation:</strong> This project was centered around the use of test driven development and utilizing the four pillars of object oriented programming to provide focus and structure to our code.
                         </p>
                         <p>
-                            <strong>Functionality:</strong> Outline the key features and what the project does from the user's perspective.
+                            <strong>Functionality:</strong> The program is intended to simulate a set of elevators, with four possible different types of elevators each functioning in different ways. The standard elevator, freight elevator, penthouse elevator, and express elevator each function in different ways but all service calls assigned to them by schedulers. The program is built to be given any number of each type of elevator and mimic the steps necessary for all the calls to be serviced.
                         </p>
                         <p>
-                            <strong>Design &amp; Implementation:</strong> Summarize the technical design decisions, languages, frameworks, or tools used to bring the project to life.
+                            <strong>Design &amp; Implementation:</strong> The program relies on the usage of interfaces and abstract classes to provide expected behavior and methods that can be implemented in different ways. The differences in elevators and schedulers despite sharing similar parent classes lead the user to be able to store their objects in their parent class's container. Child classes inherit blueprints for expected methods and in some cases fields (for abstract classes) and methods are overridden to change functionality. This covers upon all four object oriented programming pillars of Abstraction, Encapsulation, Polymorphism, and Inheritance through this methodology.
                         </p>
                     </div>
                 </div>
@@ -199,13 +199,13 @@
                         <span class="project-tag">Project #4</span>
                         <h3 class="mt-2">Restaurant POS System</h3>
                         <p>
-                            <strong>Motivation:</strong> Describe what problem or opportunity motivated this project and why it was worth building.
+                            <strong>Motivation:</strong> This project is intended to be the summation of content learned through the course of taking COMP 305 with Dr. Olsen and reinforced topics learned such as design patterns, documentation, properly using Github workflow/actions, and planning project design using a UML class diagram.
                         </p>
                         <p>
-                            <strong>Functionality:</strong> Outline the key features and what the project does from the user's perspective.
+                            <strong>Functionality:</strong> The purpose of the project is to create a functioning restaurant POS (point of sale) system, capable of handling multiple different employee roles and enabling them to interact universally among each other. The server is able to place orders and send their orders to kitchen. They are shown a screen where they can select what the customer orders, send the kitchen ticket in for the food to be prepared, and then collect payment in a variety of different ways by the customer. The chef is able to see all the current kitchen tickets, indicate that they've started preparing them, mark them as ready to be delivered, and then close the ticket out when the order is fulfilled.
                         </p>
                         <p>
-                            <strong>Design &amp; Implementation:</strong> Summarize the technical design decisions, languages, frameworks, or tools used to bring the project to life.
+                            <strong>Design &amp; Implementation:</strong> The front end for the POS system utilizes JavaFX, and the back end uses a variety of design patterns to make the function as streamlined and efficient as possible. Code was written using test driven development, with Mockito enabling developers to test how their code functions with other classes and not depend on the complete or reliable status of a different class. Spotbugs and Checkstyle were used as Github actions so every pull request that was submitted had to go through a rigorous check to ensure written code was consistent in formatting and not leaving open vulnerabilities. The POS system itself is an eager singleton, managing the inventory, bank account, and tracking of tickets and orders. The menu items were created through an abstract factory, which had a factory subclasses create ingredients depending on the meal plan they were created for. The strategy design pattern was implemented to enable the customer to pay in any method they would like (i.e. credit card, cash, digital wallet). Implementing JavaFX to control our front front end was one of the greatest challenges my group faced as we had to learn from nothing how to use it and even just adding it to our dependencies taught us a lot about how our IDEs construct an environment for us ot run our code in and what we can do to manipulate it to produce our desired output.
                         </p>
                     </div>
                 </div>
